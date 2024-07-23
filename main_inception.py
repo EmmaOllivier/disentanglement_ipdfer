@@ -87,7 +87,7 @@ for fold in range(1, FOLD+1):
                                                 batch_size=1,
                                                 num_workers=10, worker_init_fn=seed_worker, generator=g)
     
-    #train_inception.train_id(save_path, fold, loader_train, loader_test, device, EPOCH=3)
+    train_inception.train_id(save_path, fold, loader_train, loader_test, device, EPOCH=3)
 
     encoder_id_inception=model_inception.Dis(GRAY=False, cls_num=49).to(device)
     encoder_id_inception.load_state_dict(torch.load(save_path+'encoder_id_pretrained.pt'))
