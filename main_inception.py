@@ -65,18 +65,18 @@ for fold in range(1, FOLD+1):
     print(f"Fold {fold}")
     print("-------")
 
-    save_path="/home/ens/eollivier/ipd_disentanglement/model_inception_test/"+str(fold)+"/"
+    save_path="../save_path/"
     if not os.path.exists(save_path):
         os.makedirs(save_path)
-    img_path="/home/ens/eollivier/ipd_disentanglement/model_inception_test/"+str(fold)+"/img/"
+    img_path="../save_path/img/"
     if not os.path.exists(img_path):
         os.makedirs(img_path)
 
 
     save_log_name='log_lr'+str(LEARNING_RATE)+'_pretrained.csv'
-    biovid_annot_train="/home/ens/eollivier/Biovid_corrected/train"+str(fold)+"_order.csv"
-    biovid_annot_val = "/home/ens/eollivier/Biovid_corrected/valid"+str(fold)+"_order.csv"
-    Biovid_img_all =  "/state/share1/datasets/Biovid/sub_red_classes_img/"
+    biovid_annot_train="../train"+str(fold)+".csv"
+    biovid_annot_val = "../valid"+str(fold)+".csv"
+    Biovid_img_all =  "../Biovid/sub_red_classes_img/"
 
     dataset_train = Dataset_Biovid_image_binary_class(Biovid_img_all,biovid_annot_train,transform = tr.transform,IDs = None,nb_image = None,preload=False)
     loader_train = torch.utils.data.DataLoader(dataset_train,
