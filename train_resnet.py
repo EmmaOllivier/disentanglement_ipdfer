@@ -274,11 +274,6 @@ def train(save_path, img_path, encoder_id, loader_train, loader_test,device,lr=0
         tt_acc_mat.append(acc)
         tt_acc_dis_mat.append(acc_dis)
 
-        if acc > acc_max_b and true_negative>52 and true_positive>52:
-            acc_max_b = acc
-            torch.save(encoder_expression.state_dict(), os.path.join(save_path, 'encoder_balanced.pkl'))
-            torch.save(classifier_expression.state_dict(), os.path.join(save_path, 'classifier_b.pkl'))
-
         if acc > acc_max :
             acc_max = acc
             torch.save(encoder_expression.state_dict(), os.path.join(save_path, 'encoder.pkl'))
