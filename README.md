@@ -5,9 +5,9 @@
 <p>Pain being a subtle expression facing entanglement issues with this model we want to separate pain and identity by training to generate from a real image
   two other fake ones, the first one with the same expression as the real one and the second one with a neutral expression </p>
 
-  <p><img alt="Image" title="architecture" src="images/architecture_ipd.png" /></p>
+  <p><img alt="Image" title="architecture" src="images/architecture_IPD.png" /></p>
 
-JIANG, Jing et DENG, Weihong. Disentangling identity and pose for facial expression recognition. <em>IEEE Transactions on Affective Computing<\em>, 2022, vol. 13, no 4, p. 1868-1878.
+JIANG, Jing et DENG, Weihong. Disentangling identity and pose for facial expression recognition. <em>IEEE Transactions on Affective Computing</em>, 2022, vol. 13, no 4, p. 1868-1878.
 
 
 <h2>Database</h2>
