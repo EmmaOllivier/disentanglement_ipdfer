@@ -1,4 +1,4 @@
-<h1>Disentaglement for pain classification using IPD-FER architecture</h1>
+<h1>Disentanglement for pain classification using IPD-FER architecture</h1>
 
 <h2>Approch</h2>
 <p>This work is inspired by the disentanglement approch for facial expression recognition proposed proposed Jiang & Deng (2022) </p>
